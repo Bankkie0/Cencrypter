@@ -79,3 +79,9 @@ void reverse(char arr[]){
 	printf("%s\n%s\n", arr, newarr);
 	set(arr, newarr);
 }
+void remove_nlc(char arr[]){
+	int num = len(arr);
+	if(arr[num-1] == '\n'){
+		arr[num-1] = '\0';
+	}
+}
